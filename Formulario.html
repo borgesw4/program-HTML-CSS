@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+	<form method="POST" action="sugestões">
+		<!--TAG "FORM" cria um formulário-->
+		<!--Atributo "METHOD" Forma que será enviada o formulário, "POST" as informações são enviadas internamente já em "GET" as infomações são geradas na barra de endereço do site-->
+		<!--Atributo "ACTION" define onde as informações do formulários serão armazenadas-->
+		Usuário:
+		<br/>
+		<input type="text" name="usuário" />
+		<!--TAG "INPUT" coloca uma caixa para que o usuário insira dados de texto-->
+		<!--Atributo "TYPE" é o tipo de conteúdo que o usuário irá definir, podendo ser um campo de "TEXT", "PASSWORD","RADIO", "CHECKBOX" ou "SUBMIT"-->
+		<!--Atributo "NAME" serve para definir local que os dados serão enviados-->
+		<br/>
+		Senha:
+		<br/>
+		<input type="password" name="senha">
+		<br/>
+		Produto:
+		<br/>
+		<select name="opçoes">
+			<!--TAG "SELECT" cria um menu suspenso dentro do formulário-->
+			<option>Produto 1</option>
+			<!-- TAG "OPTION" define as opções dos produtos que irão aparecer na tela do formulário-->
+			<option>Produto 2</option>
+			<option>Produto 3</option>
+		</select>
+		<br/>
+		Cor:
+		<br/>
+		<input type="radio" name="cor" value="Preto">Preto
+		<br/>
+		<input type="radio" name="cor" value="Cinza">Cinza
+		<br/>
+		<input type="radio" name="cor" value="Vermelho">Vermelho
+		<br/>
+		Comentários:
+		<br/>
+		<textarea type="text" name="Comentários" value="Comentários"></textarea>
+		<!--TAG "TEXTAREA" Serve para definir um espaço maior de texto-->
+		<br/>
+		<input type="submit" value="Enviar">
+		<!-- Atributo "VALUE" define um nome de apresentação para o campo-->
+		<br/>
+		</form>
+</body>
+</html>
